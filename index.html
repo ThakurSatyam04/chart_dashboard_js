@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>FrontEnd|Developer|Intern</title>
+</head>
+<body>
+    <div class="container">
+
+        <nav class="navbar">
+            <!-- div1 -->
+            <img class="logo" src="./assets/butterfly-logo-colorful-gradient-illustrations_483537-975.avif" alt="">
+            <div class="navbar_top">
+                <img class="nav_icons" src="./assets/search-svgrepo-com.svg" alt="">
+            </div>
+            <!-- div2 -->
+            <ul class="navbar_mid">
+                <li><img style="background-color: blue;" class="nav_icons" src="./assets/home-svgrepo-com (1).svg" alt=""></li>
+                <li><img class="nav_icons" src="./assets/book-minimalistic-svgrepo-com.svg" alt=""></li>
+                <li><img class="nav_icons" src="./assets/calendar-minimalistic-svgrepo-com.svg" alt=""></li>
+                <li><img class="nav_icons" src="./assets/profile-round-1342-svgrepo-com.svg" alt=""></li>
+            </ul>
+            <!-- div3 -->
+            <div class="navbar_bottom">
+                <!-- notification icon -->
+                <img class="nav_icons" src="./assets/notification-bell-on-svgrepo-com.svg" alt="">
+                <!-- logout icon -->
+                <img class="nav_icons" src="./assets/exit-svgrepo-com.svg" alt="">
+            </div>
+        </nav>
+
+        <div class="container2">
+            <!-- Profile leftside container -->
+            <div class="left_container">
+                <!-- div1 -->
+                <div class="profile">
+                    <div class="profile_img">
+                        <img src="./assets/butterfly-logo-colorful-gradient-illustrations_483537-975.avif" alt="">
+                    </div>
+                    <!-- name -->
+                    <div>
+                        <p>Hi Mike,</p>
+                        <p>welcome back.</p>
+                    </div>
+                </div>
+                <!-- div2 -->
+                <div style="margin-top: 2rem; padding-left: 1rem;">
+                    <h4 style="margin-bottom: 1rem;">Today</h4>
+                    <h3 style="font-weight: bold;">$19,892</h3>
+                    <P style="margin-bottom: 1rem;" class="text_gray">Account Balance</P>
+                    <h5>$4000</h5>
+                    <P style="margin-bottom: 1rem;" class="text_gray">Year-to-Date Contribution</>
+                    <h5>$1,892</h5>
+                    <span class="text_gray">Total Interest</span><br>
+                    <button class="button">I want to </button>
+                </div>
+                <!-- div3 -->
+                <div class="para" style="margin-top: 2rem; padding-left: 1rem;">
+                    <h4>Recent Transaction</h4>
+                    <span class="text_gray">2020-08-07</span>
+                    <p style="margin-bottom: 1rem;">Withdrawal Transaction to bank-XXX11</p><hr>
+                    <span class="text_gray">2020-07-21</span>
+                    <p style="margin-bottom: 1rem;">Withdrawal Transaction to bank-XXX11</p><hr>
+                    <span class="text_gray">2020-07-16</span>
+                    <p style="margin-bottom: 1rem;">Withdrawal Transaction to bank-XXX11</p><hr>
+                </div>
+            </div>
+
+            <!-- main center container -->
+            <div class="main_container">
+                <!-- heading div -->
+                <div>
+                    <p style="color: blue; font-weight: bold;">Retirement Income</p>
+                    <h3>Starting Year 2056</h3>
+                </div>
+                <!-- div2 boxes-->
+                <div class="main_container_boxes">
+                    <div class="first">
+                        <h5>$300,000</h5>
+                        <span class="text_gray">My Goal</span>
+                        <div class="line"></div>
+                    </div>
+                    <div>
+                        <h5>$59%</h5>
+                        <span class="text_gray">Goal Achieved</span>
+                        <div class="line"></div>
+                    </div>
+                    <div>
+                        <h5>$300</h5>
+                        <span class="text_gray">Est. Monthly Income</span>
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+                <!-- center div chart.js -->
+                <div class="chart_box">
+                    <h4>Contributions Overtime</h4>
+                    <div class="chart-container">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div class="text_gray">Employer: K 73,500</div>
+                            <div class="text_gray">Employee: K 52,500</div>
+                            <div class="text_gray">Total Interest: K 244,313</div>
+                        </div>
+                        <canvas id="barchart" width="400" height="200"></canvas>
+                      </div>
+                </div>
+
+                <!-- last div -->
+                <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 5px;">
+                    <h4>How do I Compare to My Peers?</h4>
+                    <span class="text_gray">These numbers represent current goal achievments</span>
+                    <div class="chart2">
+                        <div class="chart2_data" style="display: flex; flex-direction: column;">
+                            <div>
+                                <span style="font-weight: bold;">Age: </span><span>Under 30</span>
+                            </div>
+                            <div>
+                                <span style="font-weight: bold;">Salary: </span><span>K 20 - K 30</span>
+                            </div>
+                            <div>
+                                <span style="font-weight: bold;">Gender: </span><span>Male</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 15px;">
+                            <div style="position: relative;">
+                                <canvas id="circularGraph1" width="100" height="100"></canvas>
+                                <div class="percentage1">78%</div>
+                            </div>
+                            <div style="position: relative;">
+                                <canvas id="circularGraph2" width="100" height="100"></canvas>
+                                <div class="percentage1">95%</div>                                
+                            </div>
+                            <div style="position: relative;">
+                                <canvas id="circularGraph3" width="100" height="100"></canvas>
+                                <div class="percentage1">59%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right side container -->
+            <div class="right_container last">
+                <!-- div1 -->
+                <div style="width: 100%; padding: 1rem;">
+                    <h4>Retirement Strategy</h4>
+                    <div style="margin-top: 2rem;">
+                        <p>Economy Contribution</p>
+                        <div class="slider-container1">
+                            <input type="range" class="slider1" min="0" max="100" step="1" value="50" id="mySlider1">
+                            <div class="percentage-filled1" id="percentageFilled1">50%</div>
+                        </div>
+                        <p>Retirement Age</p>
+                        <div class="slider-container2">
+                            <input type="range" class="slider2" min="0" max="100" step="1" value="50" id="mySlider2">
+                            <div class="percentage-filled2" id="percentageFilled2">50</div>
+                        </div><hr><br>
+                        <div style="display: flex; width: 70%; flex-direction: column;">
+                            <div style="display: flex; width: 100%; justify-content: space-between;">
+                                <p>Employer Contribution</p>
+                                <p>8.4%</p>
+                            </div>
+                            <div style="display: flex; width: 100%; justify-content: space-between;">
+                                <p>Interest Rate</p>
+                                <p>5%</p>
+                            </div>
+                            <div style="width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px;">
+                                <button class="button">Update</button>
+                                <a href=""><p style="color: blue;">View Help Docs ></p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- div2 -->
+                <div  style="width: 100%; height: 100px; display: flex; margin-top: 2rem; gap:15px">
+                    <div class="line"></div>
+                    <div style="width: 55%;">
+                        <p>Are you considering a <span style="font-weight: bold;">Housing Advance?</span></p>
+                        <span class="text_gray">Limited time reduced interest</span>
+                        <a href=""><p style="color:blue;">Learn more ></p></a>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <script src="circularChart1.js"></script>
+    <script src="circularChart2.js"></script>
+    <script src="circularChart3.js"></script>
+    <script src="chart.js"></script>
+    <script src="script.js"></script>
+</html>
